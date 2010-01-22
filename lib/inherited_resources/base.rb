@@ -12,7 +12,7 @@ module InheritedResources
   # or overwrite some helpers in the base_helpers.rb file.
   #
   class Base < ::ApplicationController
-    unloadable
+    # unloadable # disabled for temporary Bundler compatibility in 2.3.x.
 
     # Overwrite inherit_resources to add specific InheritedResources behavior.
     #
